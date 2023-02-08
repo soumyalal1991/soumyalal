@@ -26,6 +26,10 @@ html {
     font-size: 62.5%;
 }
 
+img {
+    width: 100%;
+  }
+
 body{
     color: var(--color-body);
     font-family: inter, Arial, Helvetica, sans-serif;
@@ -513,10 +517,6 @@ a {
     margin: 0 3rem;
 }
 
-.testimonial__image > img {
-    width: 100%;
-}
-
 .testimonial__image > .icon-container {
     position: absolute;
     top: 3rem;
@@ -799,10 +799,6 @@ a {
   }
 
   /* Showcase Block */
-.block-showcase__image > img {
-    width: 100%;
-  }
-  
   @media screen and (min-width: 768px) {
     .block-showcase .grid {
       grid-template-columns: 50% 50%;
@@ -854,9 +850,6 @@ a {
   }
   
   .footer__brand img {
-    /* TODO: Consider refactoring this and applying it to 
-    all images. */
-    width: 100%;
     max-width: 230px;
   }
   
@@ -900,3 +893,8 @@ a {
       font-size: 1.6rem;
     }
   }
+
+  /* Sign-up Callout */
+.callout-signup {
+    transform: translateY(5rem);
+  }  
